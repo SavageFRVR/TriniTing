@@ -97,6 +97,7 @@ function submit(y){
 		if(checkAnswer(y)){
 			if(count==4){
 				window.location.href = "youWin.html?"+name+"?"+scoreCount;
+				
 			}
 			else{
 				count++;
@@ -155,6 +156,7 @@ function checkAnswer(y){
 
 	if(ans.value.toUpperCase().trim()==check){
 		alert('Correct Answer');
+		lives = 3;
 		updateScore();
 		streak();
 		return true;
