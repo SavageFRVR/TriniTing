@@ -269,6 +269,7 @@ img{
 	width: 75vw;
 	background-color: rgba(0,0,0,0.7);
 	border-radius: 5rem;
+	margin-bottom: 1rem;
 }
 
 .fail h1,h2,h3{
