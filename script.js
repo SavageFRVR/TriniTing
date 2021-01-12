@@ -21,7 +21,7 @@ const docExitScore = document.getElementById('exitScore');
 function isEmpty(){
 	var name = window.prompt("Enter your name: ");
 	this.name = name;
-	if(name==null || name==""){
+	if(name.trim()==null || name.trim()==""){
 		console.log("Name not set");
 	}
 	else{
