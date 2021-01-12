@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<title>Trini Ting - Food</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="icon.ico" type="image/icon type">
+</head>
+<body onload="loadQuestions(0,1)">
+	<img src="yeah.svg" alt="">
+	<div class="streak">
+		<h1>Streak</h1>
+		<h2 id="streak"></h2>
+	</div>
+	<div class="score">
+		<h1>Score</h1>	
+		<h2 id="score"></h2>
+	</div>
+
+	<div class="navBtn">
+		<button onclick="location.href = 'index.html';" class="nav">Home</button>
+		<button onclick="exit()" class="nav">Exit</button>
+	</div>
+
+	<div class="title">
+		<h1>Food</h1>
+		<h2 id="countQ">Question 1</h2>
+		<h3  id="question"></h3>
+	</div>
+	<div class="question">
+		<input id="answer" type="text">
+		<br>
+		<input id="submit" type="submit" onclick="submit(1)">
+	</div>
+	<p id="footers">Keron Maharaj</p>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

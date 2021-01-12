@@ -1,0 +1,329 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	transition: all .25s ease-in;
+}
+
+@font-face {
+    font-family: "angryBirds";
+    src: url("fonts/angryBirds.ttf");
+}
+
+@font-face {
+    font-family: "barcode";
+    src: url("fonts/barcode.ttf");
+}
+
+@font-face {
+    font-family: "design";
+    src: url("fonts/design.otf");
+}
+
+@font-face {
+    font-family: "run";
+    src: url("fonts/run.otf");
+}
+
+@font-face {
+    font-family: "che";
+    src: url("fonts/che.otf");
+}
+
+@font-face {
+    font-family: "revamped";
+    src: url("fonts/Revamped.otf");
+}
+
+@font-face {
+    font-family: "docs";
+    src: url("fonts/docs.ttf");
+}
+
+@keyframes colourFlash {
+  0% {color:#ff0000;}
+  16% {color:#ffff00;}
+  33% {color:#00ff00;}
+  49% {color:#00ffff;}
+  66% {color:#0000ff;}
+  82% {color:#ff00ff;}
+  100% {color:#ff0000;}
+}
+
+@keyframes play{
+	0%{color:black;}
+	50%{color:green;}
+	75%{color:green;}
+	100%{color:black;}
+}
+
+body{
+	background: url("bg.png") no-repeat center fixed;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+img{
+	width: 100%;
+	padding:1rem .25rem 0rem;
+	position: absolute;
+	top: 0;
+
+}
+
+#footers{
+	display: inline-block;
+	font-size: 5vw;
+	padding:.5rem;
+	font-family: barcode;
+	color: red;
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	animation: colourFlash 3s infinite;
+}
+
+.home{
+	font-size: 16.7rem;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding-bottom: 2rem;
+}
+
+.navBtn{
+	display: flex;
+	justify-content: center;
+}
+
+.myButton{
+	width: auto;
+	font-size: 17rem;
+	padding: 1rem;
+	font-family: angryBirds;
+	border-radius: 1rem;
+	box-shadow: 0.2rem 0.4rem 1.6rem 0.2rem #bc2e25;
+	background-color:#bc2e25;
+	border-radius:2.8rem;
+	border:0.1rem solid #bc2e25;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+	text-shadow:0rem 0.1rem 0rem #bc2e25;
+	margin-top: 20vh;
+	animation: play 3s infinite;
+}
+
+.nav{
+	width: auto;
+	font-size: 5rem;
+	padding: 1rem;
+	font-family: angryBirds;
+	border-radius: 1rem;
+	box-shadow: 0.2rem 0.4rem 1.6rem 0.2rem #bc2e25;
+	background-color:#bc2e25;
+	border-radius:2.8rem;
+	border:0.1rem solid #bc2e25;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+	text-shadow:0rem 0.1rem 0rem #bc2e25;
+	margin: 20vh 1vw 0vh 1vw;
+	animation: play 3s infinite
+}
+
+.myButton:hover,.nav:hover {
+	background-color:#143d00;
+	transform: scale(1.125);
+	color:white;
+}
+
+.category:hover{
+	transform: scale(1.025);
+}
+
+.myButton:active,.nav:active{
+	position:relative;
+	top:0.1rem;
+}
+
+.category{
+	text-align: center;
+	display: block;
+	position: relative;
+	width: 95%;
+	height:auto;
+	margin: 2rem auto 1rem;
+	padding: 1rem;
+	background-color: rgba(0,255,255,0.2);
+	border-radius: 2rem;
+}
+
+
+.category h1{
+	font-size: 7.5vw;
+	font-family: design;
+	letter-spacing: 0.5vw;
+	margin-top: .5rem;
+	color:darkred;
+}
+
+.category li{
+	text-align: center;
+	display: block;
+	font-size: 5vw;
+	padding: .5rem;
+	border-radius: 1rem;
+	font-family: docs;
+	letter-spacing: 0.25rem
+	
+}
+
+.category li:hover{
+	background-color: rgba(0,0,0,.7);
+	letter-spacing: .75rem;
+	cursor: pointer;
+}
+
+.category li:nth-child(odd):hover{
+	color:red;
+}
+
+.category li:nth-child(odd){
+	color:black;
+}
+
+.category li:nth-child(even){
+	color:white;
+}
+
+.title{
+	display: block;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.title h1,h2,h3{
+	font-size: 10rem;
+	font-family: design;
+	letter-spacing: 1rem;
+	color: white;
+}
+
+.title h2{
+	text-align: center;
+	font-size: 7.5rem;
+	color:red;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.title h3{
+	padding: 1rem;
+	font-size:5rem;
+	font-family: sans-serif;
+}
+
+.question{
+	height: auto;
+	display: block;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.score,.streak{ 
+	display: block;
+	position: absolute;
+	right: 1vw;
+	top:20vh;
+	background-color: rgba(0,0,0,0.7);
+	width: 20vw;
+	height: auto;
+}
+
+.score h1,.streak h1{
+	text-align: center;
+	color:white;
+	font-size: 5vw;
+	padding: 0rem;
+}
+
+.score h2,.streak h2{
+	padding-bottom: 1rem;
+	text-align: center;
+	color:red;
+	font-size: 8vw;
+}
+
+.streak{
+	top:20vh;
+	left: 1vw;
+}
+
+.fail,.win{
+	position: relative;
+	left:13%;
+	margin-top: 2vh;
+	width: 75vw;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 5rem;
+}
+
+.fail h1,h2,h3{
+	padding: .5rem 5rem;
+	text-align: center;
+	font-family: che;
+	color:white;
+	letter-spacing: 1rem;
+	font-weight: normal;
+}
+
+.win h1,h2,h3{
+	padding: .5rem 5rem;
+	text-align: center;
+	font-family: che;
+	color:white;
+	letter-spacing: 1rem;
+	font-weight: normal;
+}
+
+.fail h1,.win h1{
+	font-size: 7.5vw;
+}
+
+.fail h2,.win h2{
+	font-size: 2.5vw;
+}
+
+.fail h3,.win h3{
+	font-size: 2vw;
+}
+
+input[type=text]{
+	text-align: center;
+	font-weight: bold;
+	width:75vw;
+	height:5vh;
+	border-radius: 5rem;
+	font-size: 2.5rem;
+}
+
+input[type=submit]{
+	margin-top: 1rem;
+	width: auto;
+	height: 7.5vh;
+	padding: 1rem;
+	font-size: 5rem;
+	font-family: angryBirds;
+	box-shadow: 0.2rem 0.4rem 1.6rem 0.2rem #bc2e25;
+	background-color:#bc2e25;
+	border-radius:1rem;
+	border:0.1rem solid #bc2e25;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+	text-shadow:0rem 0.1rem 0rem #bc2e25;
+	animation: play 3s infinite;
+}
