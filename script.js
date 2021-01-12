@@ -164,7 +164,7 @@ function checkAnswer(y){
 		docStreak.innerText = streakCount;
 		docScore.innerText = scoreCount;
 		lives--;
-		alert('Wrong Answer\nAnswer: '+check+"\nLives Remaining: " + lives);
+		alert('Wrong Answer\nYou entered: '+ans.value+'\nCorrect Answer: '+check+"\nLives Remaining: " + lives);
 		wrongAns++;
 		if(wrongAns>2){
 			window.location.href = "fail.html?"+name+"?"+scoreCount;
