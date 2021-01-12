@@ -153,7 +153,7 @@ function checkAnswer(y){
 	}
 
 
-	if(ans.value.toUpperCase()==check){
+	if(ans.value.toUpperCase().trim()==check){
 		alert('Correct Answer');
 		updateScore();
 		streak();
