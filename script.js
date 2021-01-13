@@ -157,6 +157,7 @@ function checkAnswer(y){
 	if(ans.value.toUpperCase().trim()==check){
 		alert('Correct Answer');
 		lives = 3;
+		wrongAns = 0;
 		updateScore();
 		streak();
 		return true;
